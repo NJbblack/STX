@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <a href="./cvs.html"><button class="btn01">버튼</button></a>
+      <input type="text" id="textbox01" />
+    </div>
+    <div>
+      <a href="./cvs.html"><button class="btn02">버튼</button></a>
+      <input type="text" id="textbox01" />
+    </div>
+    <script>
+      document.write("Hello World!");
+      let subject01 = [
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight",
+        "nine",
+        "ten",
+      ];
+      let subject02 = [
+        "하나",
+        "둘",
+        "셋",
+        "넷",
+        "다섯",
+        "여섯",
+        "일곱",
+        "여덞",
+        "아홉",
+        "열",
+      ];
+      const btn01 = document.querySelector(".btn01");
+      const textbox01 = document.getElementById("textbox01");
+      let sPick01 = Math.floor(Math.random() * subject01.length);
+      btn01.addEventListener("click", function () {
+        alert(subject01[sPick01]);
+        textbox01.document.write("이 문장으로 바뀌었습니다!");
+      });
+
+      const btn02 = document.querySelector(".btn02");
+      let sPick02 = Math.floor(Math.random() * subject02.length);
+      btn02.addEventListener("click", function () {
+        alert(subject02[sPick02]);
+      });
+    </script>
+  </body>
+</html>
